@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lemp App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding-top: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Lemp-app!<br>Enjoy the cat!</h1>
+    <p>Time from the server: Serveri rokkaa {{ time }}</p>
+    <img src="{{ url_for('static', filename='cat.png') }}" alt="Kissa" width="300">
+</body>
+</html>
