@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 import mysql.connector
 
-app = Flask(__name__, template_folder="Linux-sivu")
+app = Flask(__name__)
 
 @app.route('/')
 def index():
